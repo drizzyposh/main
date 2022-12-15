@@ -1,0 +1,93 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .profile {
+        width: 125px;
+        height: 130px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .profile-text {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        h3 {
+            color: #fff;
+            font-size: 2rem;
+            @media screen and (max-width: 500px) {
+                font-size: 1.5rem;
+            }
+
+            span {
+                color:  rgb(8, 117, 185);
+            }
+        }
+        .job {
+            color: #fff;
+            opacity: 0.5;
+            font-size: 0.85rem;
+        }
+        .text {
+            margin-top: 2rem;
+            color: #fff;
+            text-align: center;
+            font-size: 3.7rem;
+            line-height: 1.3;
+            @media screen and (max-width: 800px) {
+                font-size: 2.5rem;
+                margin-top: 2rem;
+            }
+
+            @media screen and (max-width:530px ) {
+                font-size: 1.5rem;
+            }
+        }
+        a {
+            border-radius: 10px;
+            margin-top: 3rem;
+            text-decoration: none;
+            color: #000;
+            background: #fff;
+            padding: 0.65rem 1rem;
+            text-transform: capitalize;
+            font-size: 0.85rem;
+        }
+        div {
+            position: absolute;
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            padding: 0.35rem 1rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            cursor: pointer;
+
+            @media screen and (max-width: 800px) {
+                display: none;
+            }
+        }
+        .web {
+            right: -1rem;
+            top: 3.5rem;
+        }
+        .graphics {
+            top: 2.8rem;
+            left: -4rem;
+        }
+        .freelance {
+            bottom: 2rem;
+            left: 0;
+        }
+        
+    }
+    
+}

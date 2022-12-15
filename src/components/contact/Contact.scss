@@ -1,0 +1,119 @@
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: #fff;
+    border-radius: 15px;
+    max-width: 1100px;
+    gap: 2rem;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-left-container {
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-text {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-left {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+
+            .icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: #fff;
+                background: rgb(8, 117, 185);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 1rem;
+            }
+            p {
+                font-size: 0.85rem;
+            }
+        }
+        .social-icons {
+            display: flex;
+            margin-top: 1.7rem;
+
+            a {
+                margin-right: 1rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                color: #000;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                svg {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .contact-right {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .row {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.5rem;
+
+            input {
+                border: none;
+                outline: none;
+                margin-bottom: 0.5rem;
+                padding: 1rem 1.5rem;
+                background: #f3f3f3;
+                font-family: "Poppins";
+                border-radius: 5px;
+            }
+
+            textarea {
+                border: none;
+                outline: none;
+                margin-bottom: 0.5rem;
+                padding: 1rem 1.5rem;
+                background: #f3f3f3;
+                font-family: "Poppins";
+                border-radius: 5px;
+                resize: none;
+                min-height: 150px;
+            }
+
+        }
+        .btn {
+            margin-top: 1rem;
+            background: rgb(8, 117, 185);
+            padding: 0.65rem 1rem;
+            border-radius: 10px;
+            width: 4.2rem;
+
+            a {
+                text-transform: capitalize;
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
