@@ -1,2 +1,2 @@
 # portfolio
-A Portfolio built with React.js and framer motion for animations
+A Portfolio built with React.js, SASS and framer motion for animations
